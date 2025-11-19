@@ -4,9 +4,6 @@ services:
     build: .
     ports:
       - "5000:5000"
-    volumes:
-      - ./app:/app   # Mount local app folder
     environment:
-      - FLASK_APP=app:create_app
-      - FLASK_ENV=development
-    command: flask run --host=0.0.0.0
+      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=${DATABASE_URL}
