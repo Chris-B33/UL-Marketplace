@@ -1,4 +1,4 @@
-name: CI - Conduct Tests.
+name: CI - Conduct Tests
 
 on:
   push:
