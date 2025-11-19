@@ -32,4 +32,4 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/ul-marketplace
-            docker-compose up -d --build
+            docker compose up -d --build
